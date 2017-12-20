@@ -21,10 +21,16 @@ public class PdfParserController {
     @Autowired
     private pdfParser PdfParser;
 
-    @RequestMapping(value = "/hello")
-    public void hello(){
-        System.out.println("hello sab chutiya hai ");
+    @RequestMapping(value = "/")
+    public String hello(){
+        return "hello sab chutiya hai ";
     }
+
+    @RequestMapping(value = "/hello")
+    public String helloAll(){
+        return "hello sab chutiya hai logo ";
+    }
+
 
     @RequestMapping(value = "convertToTxt", method = RequestMethod.GET, produces = "application/json")
     public ResponseEntity<?> getFile(@RequestHeader("filePath") String filePath, HttpServletResponse res) throws TikaException, IOException, SAXException {
