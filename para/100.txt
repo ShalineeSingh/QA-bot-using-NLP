@@ -1,0 +1,10 @@
+This Code  Would Display  
+<ul>  
+<li>Coffee</li>  
+<li>Milk</li> 
+</ul>
+This Code  Would Display  
+<ul>  
+<li>Coffee</li>  
+<li>Milk</li> 
+</ul>

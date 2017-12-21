@@ -1,0 +1,8 @@
+Note: It doesn't matter which tag is first, but they must be closed in the proper order.  
+Note: It doesn't matter which tag is first, but they must be closed in the proper order.  
+○ type​*​​ ​:​ ​“carousel”​ ​,  
+○ templates​*​:​ ​contains​ ​array​ ​of​ ​carousal​ ​objects​ ​[​ ​Max:​ ​10​ ​]  
+○ title​*​​ ​:​ ​contains​ ​the​ ​title​ ​of​ ​the​ ​carousel​ ​, 
+○ subtitle​*​​ ​:​ ​contains​ ​the​ ​subtitle​ ​of​ ​the​ ​carousel​ ​,  
+○ image_url​ ​​:​ ​contains​ ​image​ ​to​ ​be​ ​shown​ ​in​ ​carousel​ ​, 
+○ default_action​​ ​:​ ​default​ ​action​ ​on​ ​click​ ​on​ ​particular​ ​carousel 

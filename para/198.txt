@@ -1,0 +1,14 @@
+	Paragraphs
+	Line Breaks
+	Horizontal Rule
+	Comments in HTML
+	Try It Out! 
+	Other HTML Tags
+	Some Examples:
+	Paragraphs
+	Line Breaks
+	Horizontal Rule
+	Comments in HTML
+	Try It Out! 
+	Other HTML Tags
+	Some Examples:

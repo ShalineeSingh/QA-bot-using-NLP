@@ -1,0 +1,29 @@
+Web Safe Colors 
+A few years ago, when most computers supported only 256 different colors, a list of 216 Web Safe 
+Colors was suggested as a Web standard. The reason for this was that the Microsoft and Mac operating 
+system used 40 different "reserved" fixed system colors (about 20 each). This 216 cross platform web 
+safe color palette was originally created to ensure that all computers would display all colors correctly 
+when running a 256 color palette. To view the 216 Cross Platform Colors visit this web page: 
+http://profdevtrain.austincc.edu/html/216.html  
+ 
+16 Million Different Colors 
+The combination of Red, Green and Blue values from 0 to 255 gives a total of more than 16 million 
+different colors to play with (256 x 256 x 256). Most modern monitors are capable of displaying at 
+least 16,384 different colors. To assist you in using color schemes, check out 
+http://wellstyled.com/tools/colorscheme2/index-en.html. This site lets you test different color 
+schemes for page backgrounds, text and links.  
+Web Safe Colors 
+A few years ago, when most computers supported only 256 different colors, a list of 216 Web Safe 
+Colors was suggested as a Web standard. The reason for this was that the Microsoft and Mac operating 
+system used 40 different "reserved" fixed system colors (about 20 each). This 216 cross platform web 
+safe color palette was originally created to ensure that all computers would display all colors correctly 
+when running a 256 color palette. To view the 216 Cross Platform Colors visit this web page: 
+http://profdevtrain.austincc.edu/html/216.html  
+ 
+16 Million Different Colors 
+The combination of Red, Green and Blue values from 0 to 255 gives a total of more than 16 million 
+different colors to play with (256 x 256 x 256). Most modern monitors are capable of displaying at 
+least 16,384 different colors. To assist you in using color schemes, check out 
+http://wellstyled.com/tools/colorscheme2/index-en.html. This site lets you test different color 
+schemes for page backgrounds, text and links.  
+○ First​ ​get​ ​data​ ​from​ ​the​ ​user​ ​using​ ​Request​ ​User​ ​Data​ ​Node 

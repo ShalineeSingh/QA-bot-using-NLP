@@ -1,0 +1,19 @@
+Tag Description
+<b>  Defines bold text  
+<big>  Defines big text  
+<i>  Defines italic text  
+<small> Defines small text  
+<sup>  Defines superscripted text  
+<sub>  Defines subscripted text  
+<tt> Defines teletype text  
+<u> Deprecated. Use styles instead  
+Tag Description
+<b>  Defines bold text  
+<big>  Defines big text  
+<i>  Defines italic text  
+<small> Defines small text  
+<sup>  Defines superscripted text  
+<sub>  Defines subscripted text  
+<tt> Defines teletype text  
+<u> Deprecated. Use styles instead  
+{ 

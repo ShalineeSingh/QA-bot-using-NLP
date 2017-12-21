@@ -1,0 +1,51 @@
+Backgrounds 
+The <body> tag has two attributes where you can specify backgrounds. The background can be a color 
+or an image. 
+ 
+Bgcolor 
+The bgcolor attribute specifies a background-color for an HTML page. The value of this attribute can be 
+a hexadecimal number, an RGB value, or a color name: 
+ 
+<body bgcolor="#000000">  
+<body bgcolor="rgb(0,0,0)"> 
+<body bgcolor="black"> 
+ 
+The lines above all set the background-color to black.  
+ 
+Background 
+The background attribute can also specify a background-image for an HTML page. The value of this 
+attribute is the URL of the image you want to use. If the image is smaller than the browser window, 
+the image will repeat itself until it fills the entire browser window. 
+ 
+<body background="clouds.gif"> 
+<body background="http://profdevtrain.austincc.edu/html/graphics/clouds.gif"> 
+ 
+The URL can be relative (as in the first line above) or absolute (as in the second line above).  
+If you want to use a background image, you should keep in mind: 
+ 
+Backgrounds 
+The <body> tag has two attributes where you can specify backgrounds. The background can be a color 
+or an image. 
+ 
+Bgcolor 
+The bgcolor attribute specifies a background-color for an HTML page. The value of this attribute can be 
+a hexadecimal number, an RGB value, or a color name: 
+ 
+<body bgcolor="#000000">  
+<body bgcolor="rgb(0,0,0)"> 
+<body bgcolor="black"> 
+ 
+The lines above all set the background-color to black.  
+ 
+Background 
+The background attribute can also specify a background-image for an HTML page. The value of this 
+attribute is the URL of the image you want to use. If the image is smaller than the browser window, 
+the image will repeat itself until it fills the entire browser window. 
+ 
+<body background="clouds.gif"> 
+<body background="http://profdevtrain.austincc.edu/html/graphics/clouds.gif"> 
+ 
+The URL can be relative (as in the first line above) or absolute (as in the second line above).  
+If you want to use a background image, you should keep in mind: 
+ 
+{ 

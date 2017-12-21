@@ -1,0 +1,2 @@
+<img src="graphics/chef.gif">
+<img src="graphics/chef.gif">

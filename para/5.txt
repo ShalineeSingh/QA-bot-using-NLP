@@ -1,0 +1,11 @@
+ 
+Prerequisites: 
+You will need a text editor, such as Notepad and an Internet browser, such as Internet Explorer or 
+Netscape.  
+ 
+ 
+Prerequisites: 
+You will need a text editor, such as Notepad and an Internet browser, such as Internet Explorer or 
+Netscape.  
+ 
+json​ ​response​ ​to​ ​be​ ​in​ ​a​ ​specific​ ​format.​ ​We​ ​currently​ ​support​ ​“Sending​ ​Message”​ ​,​ ​“Send​ ​Msg​ ​with 

@@ -1,0 +1,15 @@
+Welcome to HTML Basics. This workshop leads you through the basics of Hyper Text Markup Language 
+(HTML). HTML is the building block for web pages. You will learn to use HTML to author an HTML page 
+to display in a web browser.  
+ 
+Objectives: 
+By the end of this workshop, you will be able to: 
+ 
+Welcome to HTML Basics. This workshop leads you through the basics of Hyper Text Markup Language 
+(HTML). HTML is the building block for web pages. You will learn to use HTML to author an HTML page 
+to display in a web browser.  
+ 
+Objectives: 
+By the end of this workshop, you will be able to: 
+ 
+ 

@@ -1,0 +1,10 @@
+ 
+ 
+The horizontal rule does not have a closing tag. It takes attributes such as align and width. For 
+instance: 
+ 
+ 
+ 
+The horizontal rule does not have a closing tag. It takes attributes such as align and width. For 
+instance: 
+ 

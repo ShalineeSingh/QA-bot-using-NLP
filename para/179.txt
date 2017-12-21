@@ -1,0 +1,10 @@
+There are arguments in favor of giving your tables a relative width because such table widths yield 
+pages that work regardless of the visitor's screen resolution. For example, a table width of 100% will 
+always span the entire width of the browser window whether the visitor has a 800x600 display or a 
+1024x768 display (etc). Your visitor never needs to scroll horizontally to read your page, something 
+that is regarded by most people as being very annoying.  
+There are arguments in favor of giving your tables a relative width because such table widths yield 
+pages that work regardless of the visitor's screen resolution. For example, a table width of 100% will 
+always span the entire width of the browser window whether the visitor has a 800x600 display or a 
+1024x768 display (etc). Your visitor never needs to scroll horizontally to read your page, something 
+that is regarded by most people as being very annoying.  

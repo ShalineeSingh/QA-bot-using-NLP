@@ -1,0 +1,269 @@
+
+​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​contact@engati.com 
+
+ 
+
+JSON​ ​API 
+JSON​ ​API​ ​plugin​ ​will​ ​let​ ​you​ ​get​ ​interactive​ ​responses​ ​from​ ​your​ ​own​ ​custom​ ​backend.​ ​It​ ​expects​ ​the 
+
+json​ ​response​ ​to​ ​be​ ​in​ ​a​ ​specific​ ​format.​ ​We​ ​currently​ ​support​ ​“Sending​ ​Message”​ ​,​ ​“Send​ ​Msg​ ​with 
+
+Options”​ ​and​ ​“Sending​ ​Carousels”​ ​via​ ​JSON​ ​API​ ​plugin.​ ​The​ ​format​ ​expected​ ​in​ ​each​ ​case​ ​is​ ​explained 
+
+below 
+
+ 
+
+● For​ ​text​ ​message  
+ 
+
+● type​*​​ ​:​ ​“text”  
+
+● text​*​​ ​:​ ​your​ ​text​ ​message  
+
+Json​ ​Structure  
+{ 
+
+"data":​​ ​{ 
+
+"type":​ ​"text", 
+
+"text":​ ​"your​ ​message" 
+
+} 
+
+} 
+
+ 
+
+● For​ ​carousels 
+ 
+
+○ type​*​​ ​:​ ​“carousel”​ ​,  
+○ templates​*​:​ ​contains​ ​array​ ​of​ ​carousal​ ​objects​ ​[​ ​Max:​ ​10​ ​]  
+○ title​*​​ ​:​ ​contains​ ​the​ ​title​ ​of​ ​the​ ​carousel​ ​, 
+○ subtitle​*​​ ​:​ ​contains​ ​the​ ​subtitle​ ​of​ ​the​ ​carousel​ ​,  
+○ image_url​ ​​:​ ​contains​ ​image​ ​to​ ​be​ ​shown​ ​in​ ​carousel​ ​, 
+○ default_action​​ ​:​ ​default​ ​action​ ​on​ ​click​ ​on​ ​particular​ ​carousel 
+
+● type​*​​ ​:​ ​“web_url” 
+● url​*​​ ​:​ ​link​ ​to​ ​open​ ​on​ ​click  
+
+NOTE​​ ​​:​ ​[​ ​url​ ​should​ ​have​ ​a​ ​valid​ ​protocols​ ​http​ ​or​ ​https] 
+○ buttons​​ ​:​ ​array​ ​of​ ​button​ ​object​ ​[Max:​ ​3]  
+
+ 
+
+A​ ​Coviam​ ​Technologies​ ​Platform 
+
+
+
+​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​contact@engati.com 
+
+ 
+
+ 
+
+ 
+
+NOTE​ ​:​​ ​[​ ​Either​ ​“buttons”​ ​or​ ​“image_url”​ ​is​ ​required​ ​with​ ​the​ ​“title”​ ​​ ​and​ ​both​ ​can​ ​be​ ​used 
+together​ ​as​ ​well] 
+ 
+The​ ​button​ ​array​ ​should​ ​contain​ ​a​ ​json​ ​object​ ​with​ ​the​ ​following​ ​keys​ ​-  
+
+● type​*​​ ​​:​ ​button​ ​type  
+ There​ ​can​ ​be​ ​three​ ​types​ ​of​ ​buttons:- 
+
+-​ ​​ ​​web_url​​ ​:​ ​to​ ​open​ ​a​ ​link​ ​on​ ​web​ ​view 
+-​ ​​ ​​postback​​ ​:​ ​to​ ​trigger​ ​a​ ​different​ ​flow 
+-​ ​​ ​​phone_number​​ ​:​ ​to​ ​make​ ​a​ ​call 
+
+● payload​​ ​:​ ​payload​ ​data​ ​based​ ​on​ ​type​ ​of​ ​button 
+For​ ​web_url,​ ​payload​ ​need​ ​to​ ​be​ ​a​ ​valid​ ​url​ ​[with​ ​http​ ​or​ ​https] 
+For​ ​postback,​ ​payload​ ​will​ ​be​ ​of​ ​the​ ​form​ ​‘flow_{{flow_key}}’ 
+
+ 
+To​ ​get​ ​the​ ​flow​ ​key​ ​of​ ​a​ ​particular​ ​flow,​ ​Go​ ​to​ ​Build​ ​in​ ​engati​ ​portal​ ​then​ ​click​ ​on 
+paths.​ ​Click​ ​on​ ​the​ ​flow​ ​listed​ ​there,​ ​flow_key​ ​will​ ​be​ ​displayed​ ​at​ ​the​ ​url.  
+ 
+
+ 
+ 
+Example-​ ​payload:flow_D66DDB7E84C84F03AA0A04CCC97B3F38 
+
+ 
+Json​ ​Structure  
+{ 
+
+"data"​:​​ ​{ 
+"type"​:​​ ​​"carousel", 
+"templates"​:​​ ​[ 
+
+{ 
+
+"title"​:​​ ​​"title​ ​for​ ​the​ ​carousel​ ​One", 
+"image_url"​:​​ ​​"hosted​ ​image​ ​url​ ​for​ ​carousel​ ​One", 
+"buttons"​:​​ ​[ 
+
+{ 
+
+"payload"​:​​ ​​"payload​ ​data​ ​for​ ​button​ ​one", 
+"title"​:​​ ​​"button​ ​one​ ​title", 
+"type"​:​​ ​​"button​ ​one​ ​type" 
+
+}, 
+
+{ 
+
+"payload"​:​​ ​​"​ ​payload​ ​data​ ​for​ ​button​ ​two", 
+"title"​:​​ ​​"button​ ​two​ ​title", 
+"type"​:​​ ​​"button​ ​two​ ​type" 
+
+A​ ​Coviam​ ​Technologies​ ​Platform 
+
+
+
+​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​contact@engati.com 
+} 
+
+], 
+
+"subtitle"​:​​ ​​"subtitle​ ​for​ ​carousel", 
+"default_action"​:​​ ​{ 
+
+"url"​:​​ ​​"website​ ​url", 
+"type"​:​​ ​​"web_url" 
+
+} 
+
+}, 
+
+{ 
+
+"title"​:​​ ​​"title​ ​for​ ​the​ ​carousel​ ​two", 
+"image_url"​:​​ ​​"hosted​ ​image​ ​url​ ​for​ ​carousel​ ​two", 
+"buttons"​:​​ ​[ 
+
+{ 
+
+"payload"​:​​ ​​"payload​ ​data​ ​for​ ​button​ ​one", 
+"title"​:​​ ​​"button​ ​one​ ​title", 
+"type"​:​​ ​​"button​ ​one​ ​type" 
+
+}, 
+
+{ 
+
+"payload"​:​​ ​​"​ ​payload​ ​data​ ​for​ ​button​ ​two", 
+"title"​:​​ ​​"button​ ​two​ ​title", 
+"type"​:​​ ​​"button​ ​two​ ​type" 
+
+} 
+
+], 
+
+"subtitle"​:​​ ​​"subtitle​ ​for​ ​carousel", 
+"default_action"​:​​ ​{ 
+
+"url"​:​​ ​​"website​ ​url", 
+"type"​:​​ ​​"web_url" 
+
+} 
+
+} 
+
+] 
+
+} 
+
+} 
+
+ 
+
+ 
+● For​ ​message​ ​with​ ​options 
+
+○ type​*​​ ​:​ ​“msg_options”  
+○ text​*​​ ​:​ ​“your​ ​message”  
+○ options​*​​ ​:​ ​array​ ​of​ ​options​ ​[Max​ ​:10]  
+
+○ text​*​​ ​:​ ​name​ ​of​ ​the​ ​option  
+○ postback​​ ​:​ ​flow​ ​to​ ​trigger​ ​on​ ​click​ ​of​ ​particular​ ​option  
+
+Example​ ​-​ ​​ ​​ ​​ ​postback:flow_D66DDB7E84C84F03AA0A04CCC97B3F38 
+To​ ​get​ ​flow_key​ ​follow​ ​the​ ​steps​ ​explained​ ​above 
+
+○ If​ ​postback​ ​is​ ​not​ ​provided,​ ​then​ ​matching​ ​faq​ ​will​ ​be​ ​triggered​ ​based​ ​on 
+text​ ​of​ ​the​ ​option 
+
+ 
+ 
+ 
+
+A​ ​Coviam​ ​Technologies​ ​Platform 
+
+
+
+​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​contact@engati.com 
+
+ 
+Json​ ​Structure  
+ 
+{ 
+
+"data"​:​​ ​{ 
+"type"​:​​ ​​"msg_options", 
+"text"​:​​ ​​"your​ ​message", 
+"options"​:​​ ​[ 
+
+{ 
+
+"text"​:​​ ​​"option​ ​text​ ​one", 
+"postback"​:​​ ​​"flow_{{flow_key}}" 
+
+}, 
+
+{ 
+
+"text"​:​​ ​​"option​ ​text​ ​two", 
+"postback"​:​​ ​​"flow_{{flow_key}}" 
+
+} 
+
+] 
+
+} 
+
+} 
+
+ 
+
+ 
+
+ 
+
+● How​ ​to​ ​send​ ​a​ ​user​ ​parameter​ ​with​ ​json​ ​api? 
+ 
+
+○ First​ ​get​ ​data​ ​from​ ​the​ ​user​ ​using​ ​Request​ ​User​ ​Data​ ​Node 
+
+ 
+ 
+ 
+
+A​ ​Coviam​ ​Technologies​ ​Platform 
+
+
+
+​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​contact@engati.com 
+
+ 
+ 
+
+○ Substitute​ ​the​ ​variable​ ​in​ ​api​ ​url​ ​by​ ​pressing​ ​“{“  
+
+ 
+
+A​ ​Coviam​ ​Technologies​ ​Platform 
+
+

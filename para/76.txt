@@ -1,0 +1,2 @@
+○ If​ ​postback​ ​is​ ​not​ ​provided,​ ​then​ ​matching​ ​faq​ ​will​ ​be​ ​triggered​ ​based​ ​on 
+text​ ​of​ ​the​ ​option 

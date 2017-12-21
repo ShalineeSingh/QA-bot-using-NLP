@@ -1,0 +1,7 @@
+Note: Only 16 color names are supported by the W3C HTML 4.0 standard (aqua, black, blue, 
+fuchsia, gray, green, lime, maroon, navy, olive, purple, red, silver, teal, white, and yellow). For 
+all other colors you should use the Color HEX value. 
+Note: Only 16 color names are supported by the W3C HTML 4.0 standard (aqua, black, blue, 
+fuchsia, gray, green, lime, maroon, navy, olive, purple, red, silver, teal, white, and yellow). For 
+all other colors you should use the Color HEX value. 
+ 

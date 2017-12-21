@@ -1,0 +1,10 @@
+ 
+The <br> tag has no closing tag. 
+ 
+Horizontal Rule 
+The <hr> element is used for horizontal rules that act as dividers between sections, like this:  
+ 
+The <br> tag has no closing tag. 
+ 
+Horizontal Rule 
+The <hr> element is used for horizontal rules that act as dividers between sections, like this:  

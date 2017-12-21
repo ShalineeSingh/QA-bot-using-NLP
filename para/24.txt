@@ -1,0 +1,23 @@
+This tag defines an HTML table: <table>. With an added border attribute, you can tell the browser that 
+the table should have no borders: <table border="0">. Attributes always come in name/value pairs 
+like this: name="value". Attributes are always added to the start tag of an HTML element and the 
+value is surrounded by quotes. 
+ 
+Quote Styles, "red" or 'red'? 
+Attribute values should always be enclosed in quotes. Double style quotes are the most common, but 
+single style quotes are also allowed. In some rare situations, like when the attribute value itself 
+contains quotes, it is necessary to use single quotes: 
+ 
+name='George "machine Gun" Kelly' 
+This tag defines an HTML table: <table>. With an added border attribute, you can tell the browser that 
+the table should have no borders: <table border="0">. Attributes always come in name/value pairs 
+like this: name="value". Attributes are always added to the start tag of an HTML element and the 
+value is surrounded by quotes. 
+ 
+Quote Styles, "red" or 'red'? 
+Attribute values should always be enclosed in quotes. Double style quotes are the most common, but 
+single style quotes are also allowed. In some rare situations, like when the attribute value itself 
+contains quotes, it is necessary to use single quotes: 
+ 
+name='George "machine Gun" Kelly' 
+A​ ​Coviam​ ​Technologies​ ​Platform 

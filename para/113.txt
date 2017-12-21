@@ -1,0 +1,24 @@
+HTML uses the <a> anchor tag to create a link to another document or web page.  
+ 
+The Anchor Tag and the Href Attribute 
+An anchor can point to any resource on the Web: an HTML page, an image, a sound file, a movie, etc. 
+The syntax of creating an anchor:  
+ 
+<a href="url">Text to be displayed</a> 
+ 
+The <a> tag is used to create an anchor to link from, the href attribute is used to tell the address of 
+the document or page we are linking to, and the words between the open and close of the anchor tag 
+will be displayed as a hyperlink. 
+ 
+HTML uses the <a> anchor tag to create a link to another document or web page.  
+ 
+The Anchor Tag and the Href Attribute 
+An anchor can point to any resource on the Web: an HTML page, an image, a sound file, a movie, etc. 
+The syntax of creating an anchor:  
+ 
+<a href="url">Text to be displayed</a> 
+ 
+The <a> tag is used to create an anchor to link from, the href attribute is used to tell the address of 
+the document or page we are linking to, and the words between the open and close of the anchor tag 
+will be displayed as a hyperlink. 
+ 

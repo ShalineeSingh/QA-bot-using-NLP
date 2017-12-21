@@ -1,0 +1,16 @@
+</body> 
+</html> 
+ 
+Save your page as mytable2.html and view it in your browser. To see how your page should look 
+visit this web page: http://profdevtrain.austincc.edu/html/mytable2.html  
+ 
+I have indented some of the HTML code in the above example. Indenting the code can make your 
+HTML document easier to read. 
+</body> 
+</html> 
+ 
+Save your page as mytable2.html and view it in your browser. To see how your page should look 
+visit this web page: http://profdevtrain.austincc.edu/html/mytable2.html  
+ 
+I have indented some of the HTML code in the above example. Indenting the code can make your 
+HTML document easier to read. 

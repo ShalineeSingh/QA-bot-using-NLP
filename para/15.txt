@@ -1,0 +1,23 @@
+ 
+Logical vs. Physical Tags  
+In HTML there are both logical tags and physical tags. Logical tags are designed to describe (to the 
+browser) the enclosed text's meaning. An example of a logical tag is the <strong> </strong> tag. By 
+placing text in between these tags you are telling the browser that the text has some greater 
+importance. By default all browsers make the text appear bold when in between the <strong> and 
+</strong> tags. 
+ 
+Physical tags on the other hand provide specific instructions on how to display the text they enclose. 
+Examples of physical tags include:  
+ 
+ 
+Logical vs. Physical Tags  
+In HTML there are both logical tags and physical tags. Logical tags are designed to describe (to the 
+browser) the enclosed text's meaning. An example of a logical tag is the <strong> </strong> tag. By 
+placing text in between these tags you are telling the browser that the text has some greater 
+importance. By default all browsers make the text appear bold when in between the <strong> and 
+</strong> tags. 
+ 
+Physical tags on the other hand provide specific instructions on how to display the text they enclose. 
+Examples of physical tags include:  
+ 
+"text":​ ​"your​ ​message" 

@@ -1,0 +1,5 @@
+1. Coffee 
+2. Milk 
+1. Coffee 
+2. Milk 
+○ Substitute​ ​the​ ​variable​ ​in​ ​api​ ​url​ ​by​ ​pressing​ ​“{“  

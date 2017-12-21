@@ -1,0 +1,2 @@
+NOTE​​ ​​:​ ​[​ ​url​ ​should​ ​have​ ​a​ ​valid​ ​protocols​ ​http​ ​or​ ​https] 
+○ buttons​​ ​:​ ​array​ ​of​ ​button​ ​object​ ​[Max:​ ​3]  

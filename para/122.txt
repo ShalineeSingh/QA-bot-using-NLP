@@ -1,0 +1,8 @@
+Note: Always add a trailing slash to subfolder references. If you link like this: 
+href="http://profdevtrain.austincc.edu/html", you will generate two HTTP requests to the 
+server, because the server will add a slash to the address and create a new request like this: 
+href="http://profdevtrain.austincc.edu/html/"  
+Note: Always add a trailing slash to subfolder references. If you link like this: 
+href="http://profdevtrain.austincc.edu/html", you will generate two HTTP requests to the 
+server, because the server will add a slash to the address and create a new request like this: 
+href="http://profdevtrain.austincc.edu/html/"  

@@ -1,0 +1,12 @@
+ 
+ 
+Not only does the source attribute specify what image to use, but where the image is located. The 
+above image, graphics/chef.gif, means that the browser will look for the image name chef.gif in a 
+graphics folder in the same folder as the html document itself.  
+ 
+ 
+ 
+Not only does the source attribute specify what image to use, but where the image is located. The 
+above image, graphics/chef.gif, means that the browser will look for the image name chef.gif in a 
+graphics folder in the same folder as the html document itself.  
+ 

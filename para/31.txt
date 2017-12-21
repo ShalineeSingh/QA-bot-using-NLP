@@ -1,0 +1,6 @@
+<h3>This is a heading</h3>  
+<h3>This is a heading</h3>  
+NOTE​ ​:​​ ​[​ ​Either​ ​“buttons”​ ​or​ ​“image_url”​ ​is​ ​required​ ​with​ ​the​ ​“title”​ ​​ ​and​ ​both​ ​can​ ​be​ ​used 
+together​ ​as​ ​well] 
+ 
+The​ ​button​ ​array​ ​should​ ​contain​ ​a​ ​json​ ​object​ ​with​ ​the​ ​following​ ​keys​ ​-  

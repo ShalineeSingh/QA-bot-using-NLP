@@ -1,0 +1,16 @@
+	HTML Tags
+	What are HTML tags? 
+	Logical vs. Physical Tags 
+	HTML Elements
+	Nested Tags 
+	Why Use Lowercase Tags?
+	Tag Attributes
+	Quote Styles, "red" or 'red'?
+	HTML Tags
+	What are HTML tags? 
+	Logical vs. Physical Tags 
+	HTML Elements
+	Nested Tags 
+	Why Use Lowercase Tags?
+	Tag Attributes
+	Quote Styles, "red" or 'red'?

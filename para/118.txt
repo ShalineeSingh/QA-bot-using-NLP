@@ -1,0 +1,24 @@
+The Anchor Tag and the Name Attribute 
+The name attribute is used to create a named anchor. When using named anchors we can create links 
+that can jump directly to a specific section on a page, instead of letting the user scroll around to find 
+what he/she is looking for. Unlike an anchor that uses href, a named anchor doesn't change the 
+appearance of the text (unless you set styles for that anchor) or indicate in any way that there is 
+anything special about the text. Below is the syntax of a named anchor: 
+ 
+<a name="top">Text to be displayed</a> 
+ 
+To link directly to the top section, add a # sign and the name of the anchor to the end of a URL, like 
+this: 
+ 
+The Anchor Tag and the Name Attribute 
+The name attribute is used to create a named anchor. When using named anchors we can create links 
+that can jump directly to a specific section on a page, instead of letting the user scroll around to find 
+what he/she is looking for. Unlike an anchor that uses href, a named anchor doesn't change the 
+appearance of the text (unless you set styles for that anchor) or indicate in any way that there is 
+anything special about the text. Below is the syntax of a named anchor: 
+ 
+<a name="top">Text to be displayed</a> 
+ 
+To link directly to the top section, add a # sign and the name of the anchor to the end of a URL, like 
+this: 
+ 

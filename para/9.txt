@@ -1,0 +1,34 @@
+ 
+Try It? 
+Open your text editor and type the following text: 
+ 
+<html> 
+<head> 
+<title>My First Webpage</title>  
+</head>  
+<body> 
+This is my first homepage. <b>This text is bold</b>  
+</body>  
+</html> 
+       
+Save the file as mypage.html. Start your Internet browser. Select Open (or Open Page) in the File 
+menu of your browser. A dialog box will appear. Select Browse (or Choose File) and locate the html 
+file you just created - mypage.html - select it and click Open. Now you should see an address in the 
+ 
+Try It? 
+Open your text editor and type the following text: 
+ 
+<html> 
+<head> 
+<title>My First Webpage</title>  
+</head>  
+<body> 
+This is my first homepage. <b>This text is bold</b>  
+</body>  
+</html> 
+       
+Save the file as mypage.html. Start your Internet browser. Select Open (or Open Page) in the File 
+menu of your browser. A dialog box will appear. Select Browse (or Choose File) and locate the html 
+file you just created - mypage.html - select it and click Open. Now you should see an address in the 
+● For​ ​text​ ​message  
+ 

@@ -1,0 +1,66 @@
+ 
+Open up your text editor. Type in your <html>, <head> and <body> tags. From here on I will only be 
+writing what goes between the <body> tags. Type in the following:  
+ 
+<table border="1"> 
+<tr> 
+<td>Tables can be used to layout information</td> 
+<td>&nbsp; <img src="http://profdevtrain.austincc.edu/html/graphics/chef.gif"> &nbsp; 
+</td> 
+</tr> 
+</table> 
+ 
+Save your page as mytable1.html and view it in your browser. To see how your page should look 
+visit this web page: http://profdevtrain.austincc.edu/html/mytable1.html 
+ 
+Headings in a Table 
+Headings in a table are defined with the <th> tag. 
+ 
+This code  Would Display  
+<table border="1">  
+<tr>  
+<th>Heading</th>  
+<th>Another Heading</th>  
+</tr>  
+<tr>  
+<td>row 1, cell 1</td>  
+<td>row 1, cell 2</td>  
+</tr>  
+<tr>  
+<td>row 2, cell 1</td>  
+<td>row 2, cell 2</td>  
+</tr>  
+</table>
+ 
+Open up your text editor. Type in your <html>, <head> and <body> tags. From here on I will only be 
+writing what goes between the <body> tags. Type in the following:  
+ 
+<table border="1"> 
+<tr> 
+<td>Tables can be used to layout information</td> 
+<td>&nbsp; <img src="http://profdevtrain.austincc.edu/html/graphics/chef.gif"> &nbsp; 
+</td> 
+</tr> 
+</table> 
+ 
+Save your page as mytable1.html and view it in your browser. To see how your page should look 
+visit this web page: http://profdevtrain.austincc.edu/html/mytable1.html 
+ 
+Headings in a Table 
+Headings in a table are defined with the <th> tag. 
+ 
+This code  Would Display  
+<table border="1">  
+<tr>  
+<th>Heading</th>  
+<th>Another Heading</th>  
+</tr>  
+<tr>  
+<td>row 1, cell 1</td>  
+<td>row 1, cell 2</td>  
+</tr>  
+<tr>  
+<td>row 2, cell 1</td>  
+<td>row 2, cell 2</td>  
+</tr>  
+</table>

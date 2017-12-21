@@ -1,0 +1,7 @@
+ <b>: Makes the text bold.  
+ <big>: Makes the text usually one size bigger than what's around it.  
+ <i>: Makes text italic. 
+ <b>: Makes the text bold.  
+ <big>: Makes the text usually one size bigger than what's around it.  
+ <i>: Makes text italic. 
+} 

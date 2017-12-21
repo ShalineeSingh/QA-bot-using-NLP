@@ -1,0 +1,15 @@
+Some characters have a special meaning in HTML, like the less than sign (<) that defines the start of 
+an HTML tag. If we want the browser to actually display these characters we must insert character 
+entities in place of the actual characters themselves.  
+ 
+The Most Common Character Entities: 
+ 
+Result Description Entity Name Entity Number
+Some characters have a special meaning in HTML, like the less than sign (<) that defines the start of 
+an HTML tag. If we want the browser to actually display these characters we must insert character 
+entities in place of the actual characters themselves.  
+ 
+The Most Common Character Entities: 
+ 
+Result Description Entity Name Entity Number
+} 

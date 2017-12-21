@@ -1,0 +1,12 @@
+The Image Tag and the Src Attribute  
+The <img> tag is empty, which means that it contains attributes only and it has no closing tag. To 
+display an image on a page, you need to use the src attribute. Src stands for "source". The value of 
+the src attribute is the URL of the image you want to display on your page. The syntax of defining an 
+image: 
+ 
+The Image Tag and the Src Attribute  
+The <img> tag is empty, which means that it contains attributes only and it has no closing tag. To 
+display an image on a page, you need to use the src attribute. Src stands for "source". The value of 
+the src attribute is the URL of the image you want to display on your page. The syntax of defining an 
+image: 
+ 

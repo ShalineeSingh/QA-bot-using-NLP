@@ -1,0 +1,9 @@
+Note: The bgcolor, background, and the text attributes in the <body> tag are deprecated in 
+the latest versions of HTML (HTML 4 and XHTML). The World Wide Web Consortium (W3C) has 
+removed these attributes from its recommendations. Style sheets (CSS) should be used instead 
+(to define the layout and display properties of HTML elements). 
+Note: The bgcolor, background, and the text attributes in the <body> tag are deprecated in 
+the latest versions of HTML (HTML 4 and XHTML). The World Wide Web Consortium (W3C) has 
+removed these attributes from its recommendations. Style sheets (CSS) should be used instead 
+(to define the layout and display properties of HTML elements). 
+}, 

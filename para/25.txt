@@ -1,0 +1,10 @@
+Note: Some tags we will discuss are deprecated, meaning the World Wide Web Consortium 
+(W3C) the governing body that sets HTML, XML, CSS, and other technical standards decided 
+those tags and attributes are marked for deletion in future versions of HTML and XHTML. 
+Browsers should continue to support deprecated tags and attributes, but eventually these tags 
+are likely to become obsolete and so future support cannot be guaranteed. 
+Note: Some tags we will discuss are deprecated, meaning the World Wide Web Consortium 
+(W3C) the governing body that sets HTML, XML, CSS, and other technical standards decided 
+those tags and attributes are marked for deletion in future versions of HTML and XHTML. 
+Browsers should continue to support deprecated tags and attributes, but eventually these tags 
+are likely to become obsolete and so future support cannot be guaranteed. 

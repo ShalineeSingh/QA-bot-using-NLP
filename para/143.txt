@@ -1,0 +1,38 @@
+ 
+The browser puts the image where the image tag occurs in the document. If you put an image tag 
+between two paragraphs, the browser shows the first paragraph, then the image, and then the second 
+paragraph.  
+ 
+The Alt Attribute  
+The alt attribute is used to define an alternate text for an image. The value of the alt attribute is 
+author-defined text:  
+ 
+<img src="graphics/chef.gif" alt="Smiling Happy Chef "> 
+ 
+The alt attribute tells the reader what he or she is missing on a page if the browser can't load images. 
+The browser will then display the alternate text instead of the image. It is a good practice to include 
+the alt attribute for each image on a page, to improve the display and usefulness of your document for 
+people who have text-only browsers or use screen readers.  
+ 
+Image Dimensions 
+When you have an image, the browser usually figures out how big the image is all by itself. If you put 
+in the image dimensions in pixels however, the browser simply reserves a space for the image, then 
+ 
+The browser puts the image where the image tag occurs in the document. If you put an image tag 
+between two paragraphs, the browser shows the first paragraph, then the image, and then the second 
+paragraph.  
+ 
+The Alt Attribute  
+The alt attribute is used to define an alternate text for an image. The value of the alt attribute is 
+author-defined text:  
+ 
+<img src="graphics/chef.gif" alt="Smiling Happy Chef "> 
+ 
+The alt attribute tells the reader what he or she is missing on a page if the browser can't load images. 
+The browser will then display the alternate text instead of the image. It is a good practice to include 
+the alt attribute for each image on a page, to improve the display and usefulness of your document for 
+people who have text-only browsers or use screen readers.  
+ 
+Image Dimensions 
+When you have an image, the browser usually figures out how big the image is all by itself. If you put 
+in the image dimensions in pixels however, the browser simply reserves a space for the image, then 

@@ -1,0 +1,31 @@
+The most important tags in HTML are tags that define headings, paragraphs and line breaks. 
+ 
+Basic HTML Tags 
+Tag Description
+<html> Defines an HTML document  
+<body> Defines the document's body 
+<h1> to <h6> Defines header 1 to header 6 
+<p> Defines a paragraph  
+<br> Inserts a single line break  
+<hr> Defines a horizontal rule 
+<!--> Defines a comment 
+  
+Headings 
+Headings are defined with the <h1> to <h6> tags. <h1> defines the largest heading while <h6> defines 
+the smallest. 
+The most important tags in HTML are tags that define headings, paragraphs and line breaks. 
+ 
+Basic HTML Tags 
+Tag Description
+<html> Defines an HTML document  
+<body> Defines the document's body 
+<h1> to <h6> Defines header 1 to header 6 
+<p> Defines a paragraph  
+<br> Inserts a single line break  
+<hr> Defines a horizontal rule 
+<!--> Defines a comment 
+  
+Headings 
+Headings are defined with the <h1> to <h6> tags. <h1> defines the largest heading while <h6> defines 
+the smallest. 
+ 

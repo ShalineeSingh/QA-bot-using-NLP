@@ -1,0 +1,17 @@
+What are HTML tags?  
+ HTML tags are used to mark-up HTML elements 
+ HTML tags are surrounded by the two characters < and > 
+ The surrounding characters are called angle brackets 
+ HTML tags normally come in pairs like <b> and </b> 
+ The first tag in a pair is the start tag, the second tag is the end tag 
+ The text between the start and end tags is the element content 
+ HTML tags are not case sensitive, <b> means the same as <B> 
+What are HTML tags?  
+ HTML tags are used to mark-up HTML elements 
+ HTML tags are surrounded by the two characters < and > 
+ The surrounding characters are called angle brackets 
+ HTML tags normally come in pairs like <b> and </b> 
+ The first tag in a pair is the start tag, the second tag is the end tag 
+ The text between the start and end tags is the element content 
+ HTML tags are not case sensitive, <b> means the same as <B> 
+"type":​ ​"text", 

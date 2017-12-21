@@ -1,0 +1,6 @@
+src="../chef.gif" means that the image is in 
+one folder up from the html document that called 
+for it. 
+src="../chef.gif" means that the image is in 
+one folder up from the html document that called 
+for it. 

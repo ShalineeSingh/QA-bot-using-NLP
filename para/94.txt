@@ -1,0 +1,17 @@
+Color Color HEX Color Name
+  #F0F8FF AliceBlue 
+  #FAEBD7  AntiqueWhite  
+   #7FFFD4  Aquamarine  
+   #000000  Black  
+   #0000FF Blue  
+   #8A2BE2  BlueViolet  
+   #A52A2A  Brown  
+Color Color HEX Color Name
+  #F0F8FF AliceBlue 
+  #FAEBD7  AntiqueWhite  
+   #7FFFD4  Aquamarine  
+   #000000  Black  
+   #0000FF Blue  
+   #8A2BE2  BlueViolet  
+   #A52A2A  Brown  
+ 

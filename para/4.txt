@@ -1,0 +1,16 @@
+ Use a text editor to author an HTML document. 
+ Be able to use basic tags to denote paragraphs, emphasis or special type. 
+ Create hyperlinks to other documents. 
+ Create an email link. 
+ Add images to your document. 
+ Use a table for layout. 
+ Apply colors to your HTML document. 
+ Use a text editor to author an HTML document. 
+ Be able to use basic tags to denote paragraphs, emphasis or special type. 
+ Create hyperlinks to other documents. 
+ Create an email link. 
+ Add images to your document. 
+ Use a table for layout. 
+ Apply colors to your HTML document. 
+JSON​ ​API 
+JSON​ ​API​ ​plugin​ ​will​ ​let​ ​you​ ​get​ ​interactive​ ​responses​ ​from​ ​your​ ​own​ ​custom​ ​backend.​ ​It​ ​expects​ ​the 

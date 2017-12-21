@@ -1,0 +1,4 @@
+src="../../../other/images/chef.gif" means 
+this goes multiple layers up. 
+src="../../../other/images/chef.gif" means 
+this goes multiple layers up. 

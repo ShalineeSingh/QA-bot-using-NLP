@@ -1,0 +1,19 @@
+ 
+One thing you should avoid using is a word processor (like Microsoft Word) for authoring your HTML 
+documents.  
+ 
+What is an html File? 
+HTML is a format that tells a computer how to display a web page. The documents themselves are 
+plain text files with special "tags" or codes that a web browser uses to interpret and display 
+information on your computer screen.  
+ 
+ 
+One thing you should avoid using is a word processor (like Microsoft Word) for authoring your HTML 
+documents.  
+ 
+What is an html File? 
+HTML is a format that tells a computer how to display a web page. The documents themselves are 
+plain text files with special "tags" or codes that a web browser uses to interpret and display 
+information on your computer screen.  
+ 
+below 
