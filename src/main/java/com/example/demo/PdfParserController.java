@@ -99,7 +99,13 @@ public class PdfParserController {
             response = new JSONObject();
             JSONObject data = new JSONObject();
             data.put("type", "text");
-            data.put("text", files);
+            String ans = null;
+            for (String a : files){
+                ans += a;
+                ans = ans + "\n";
+            }
+            data.put("text",ans);
+            data.put("text", ans);
             response.put("data", data);
         }catch(Exception ex){
             return new ResponseEntity<String>(HttpStatus.BAD_REQUEST);
@@ -134,7 +140,12 @@ public class PdfParserController {
             response = new JSONObject();
             JSONObject data = new JSONObject();
             data.put("type", "text");
-            data.put("text",rankedDocs);
+            String ans = null;
+            for (String a : rankedDocs){
+                ans += a;
+                ans = ans + "\n\n";
+            }
+            data.put("text",ans);
             response.put("data", data);
         }catch(Exception ex){
             ex.printStackTrace();
