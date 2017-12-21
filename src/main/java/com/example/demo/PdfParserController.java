@@ -41,6 +41,9 @@ public class PdfParserController {
     public ResponseEntity<?> getFile(@RequestHeader("filePath") String filePath,@RequestHeader("fileName") String fileName, HttpServletResponse res) throws TikaException, IOException, SAXException {
         PdfParser.setFilePath(filePath);
         PdfParser.setFileName(fileName);
+        indexerParaDocs.setFileName(fileName);
+        System.out.println(fileName);
+
         JSONObject response;
 
         try {
@@ -67,7 +70,9 @@ public class PdfParserController {
     public ResponseEntity<?> getTxtFile(@RequestHeader("filePath") String filePath, @RequestHeader("fileName") String fileName,HttpServletResponse res) {
         textParser.setFilePath(filePath);
         textParser.setFileName(fileName);
+        indexerParaDocs.setFileName(fileName);
         JSONObject response;
+        System.out.println(fileName);
         try {
             textParser.getFileText();
             indexerParaDocs.constructIndex(fileName);
@@ -79,6 +84,7 @@ public class PdfParserController {
             response.put("data", data);
             System.out.println(response);
         } catch(Exception ex) {
+            ex.printStackTrace();
             return new ResponseEntity<String>(HttpStatus.BAD_REQUEST);
         }
         return new ResponseEntity(response, HttpStatus.OK);
