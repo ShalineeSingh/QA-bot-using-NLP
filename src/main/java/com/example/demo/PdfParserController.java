@@ -99,7 +99,7 @@ public class PdfParserController {
             response = new JSONObject();
             JSONObject data = new JSONObject();
             data.put("type", "text");
-            String ans = null;
+            String ans = "";
             for (String a : files){
                 ans += a;
                 ans = ans + "\n";
@@ -140,7 +140,7 @@ public class PdfParserController {
             response = new JSONObject();
             JSONObject data = new JSONObject();
             data.put("type", "text");
-            String ans = null;
+            String ans = "";
             for (String a : rankedDocs){
                 ans += a;
                 ans = ans + "\n\n";
