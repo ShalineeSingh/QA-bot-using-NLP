@@ -25,6 +25,9 @@ public class IndexerParaDocs {
 
     public ArrayList<termfreq> doclist=new ArrayList<termfreq>();
     public TreeMap<String,ArrayList > frequencyData = new TreeMap<String, ArrayList>();;
+    public static TreeMap<String,ArrayList > indexedDocs = new TreeMap<String, ArrayList>();
+    public static TreeMap<String,ArrayList > indexedMyDocs = new TreeMap<String, ArrayList>();
+    public static TreeMap<String,Double > tfidfScore = new TreeMap<String, Double>();
     public Stemmer stemObj=new Stemmer();
 //    private String RESULT_FNAME = "result.txt";
 //    private String STOPWORD_INDEX = "stop-word-list.txt";
@@ -45,6 +48,23 @@ public class IndexerParaDocs {
 
     }
 
+    public  void indexResearchDoc()throws IOException{
+        String filePath = "resDocs/";
+        File dir = new File(filePath);
+        File[] flist=dir.listFiles();
+        createIndexFile(indexedDocs, doclist,flist, "researchIndex");
+        createIndexFile(indexedMyDocs, doclist,flist, "researchMyIndex");
+    }
+
+    public TreeMap<String,Double > calculateTfIdf(TreeMap<String,ArrayList > indexedDocs, TreeMap<String,ArrayList > indexedMyDocs, int fileSize){
+        for(String word : indexedMyDocs.keySet( )){
+            ArrayList<termfreq> obj1=frequencyData.get(word);
+            double temp=obj1.get(0).term_freq *Math.log(fileSize / obj1.size());
+            tfidfScore.put(word,temp);
+
+        }
+        return tfidfScore;
+    }
     public IndexerParaDocs(){
         doclist=new ArrayList<termfreq>();
         frequencyData = new TreeMap<String, ArrayList>();
