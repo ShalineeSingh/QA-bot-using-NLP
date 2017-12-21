@@ -52,8 +52,11 @@ public class IndexerParaDocs {
         String filePath = "resDocs/";
         File dir = new File(filePath);
         File[] flist=dir.listFiles();
+        String fileMyPath = "Docs/";
+        File Mydir = new File(fileMyPath);
+        File[] myflist=dir.listFiles();
         createIndexFile(indexedDocs, doclist,flist, "researchIndex");
-        createIndexFile(indexedMyDocs, doclist,flist, "researchMyIndex");
+        createIndexFile(indexedMyDocs, doclist,myflist, "researchMyIndex");
     }
 
     public TreeMap<String,Double > calculateTfIdf(TreeMap<String,ArrayList > indexedDocs, TreeMap<String,ArrayList > indexedMyDocs, int fileSize){
