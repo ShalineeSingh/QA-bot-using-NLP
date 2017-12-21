@@ -1,6 +1,0 @@
-src="../images/chef.gif" means that the image 
-is one folder up and then another folder down in 
-the images directory.  
-src="../images/chef.gif" means that the image 
-is one folder up and then another folder down in 
-the images directory.  

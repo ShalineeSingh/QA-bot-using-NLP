@@ -18,6 +18,8 @@ import java.util.*;
 import java.util.regex.Pattern;
 import java.io.*;
 
+import static com.example.demo.Index.getEntityTags;
+
 @Service
 public class IndexerParaDocs {
 
@@ -67,7 +69,7 @@ public class IndexerParaDocs {
 
     //-----  	@Contains all the method for Indexing the Documents.
     //If the file is already indexed
-    public void findIndexer() throws IOException, ClassNotFoundException{
+    public void findIndexer(String filename) throws IOException, ClassNotFoundException{
 //        Scanner keyboard = new Scanner(System.in);
 //        System.out.println("Enter The path of the collecetion");
 //        String filePath=keyboard.nextLine();
@@ -92,7 +94,7 @@ public class IndexerParaDocs {
 //
 //        }
 
-        frequencyData=readIndexFile();
+        frequencyData=readIndexFile(filename);
 
 
 
@@ -128,11 +130,21 @@ public class IndexerParaDocs {
     public String[] RankQueryTokens(String query) throws IOException, ClassNotFoundException {
         String token[]=query.split(" ");
         Arrays.sort(token);
+        for(int i =0 ; i < token.length; i++){
+            token[i] = token[i].toLowerCase();
+        }
+        String queryType = "";
+        for(int i =0 ; i < token.length; i++){
+            if(qustionTypes.containsKey(token[i])){
+                queryType = token[i];
+                break;
+            }
+        }
         sampleToken=new String[token.length];
         sampleToken=token;
         //call the rank function based on tfidf
         File[] flist = getFileList();
-        return rank(frequencyData,doclist,token,flist);
+        return rank(frequencyData,doclist,token,flist,queryType);
     }
 
 //    public void createFile(String fileData, int index){
@@ -217,8 +229,8 @@ public class IndexerParaDocs {
     }
 
     //------          @read Index file from Disk
-    public TreeMap<String,ArrayList> readIndexFile() throws IOException{
-        FileInputStream fis = new FileInputStream("TreeMap");
+    public TreeMap<String,ArrayList> readIndexFile(String filename) throws IOException{
+        FileInputStream fis = new FileInputStream("maps/" + filename);
         ObjectInputStream ois = new ObjectInputStream(fis);
         @SuppressWarnings("unchecked")
 
@@ -285,9 +297,11 @@ public class IndexerParaDocs {
     }
 
     //--              @Genearate the rank based on the query.
-    public String[] rank( TreeMap<String,ArrayList > frequencyData,ArrayList<termfreq> doclist, String[] token,File[] flist)throws IOException, ClassNotFoundException{
+    public String[] rank( TreeMap<String,ArrayList > frequencyData,ArrayList<termfreq> doclist, String[] token,File[] flist, String queryType)throws IOException, ClassNotFoundException{
         //changed rank function. It will now return String array of 20 documents name.
-        String[] rankedDocs = new String[20];
+        String[] rankedDocs = new String[5];
+        int[] classifiedAnswers = new int[5];
+        String[] classifiedAnsString= new String[5];
 
         int fileSize=flist.length;
         double[] rank=new double[fileSize];
@@ -328,7 +342,7 @@ public class IndexerParaDocs {
             }
         });
 
-        for(int i=z-1;i>=z-20;i--){
+        for(int i=z-1;i>=z-5;i--){
 
             try{
                 BufferedReader reader = new BufferedReader(new FileReader("para/"+flist[idx[i]].getName()));
@@ -339,8 +353,30 @@ public class IndexerParaDocs {
                     paraFile= paraFile+line;
                 }
                 reader.close();
-                System.out.println(paraFile);
+                //System.out.println(paraFile);
+
+                if(queryType == "who"){
+                    Map<String, String> entityTags = getEntityTags(paraFile);
+                    for(String word : entityTags.keySet( )){
+                        if(entityTags.get(word) == "PERSON"){
+                            classifiedAnswers[fileSize-i-1]++;
+                            classifiedAnsString[fileSize-i-1]=word;
+                        }
+                    }
+                }
+                if(queryType == "where"){
+
+                    Map<String, String> entityTags = getEntityTags(paraFile);
+                    for(String word : entityTags.keySet( )){
+                        if(entityTags.get(word) == "PLACE"){
+                            classifiedAnswers[fileSize-i-1]++;
+                            classifiedAnsString[fileSize-i-1]=word;
+                        }
+                    }
+                }
+
                 rankedDocs[fileSize-i-1]=paraFile;
+
             }
             catch (Exception e)
             {
@@ -348,6 +384,37 @@ public class IndexerParaDocs {
                 e.printStackTrace();
                 return null;
             }
+        }
+        if(queryType == "who"){
+            Integer[] idx1= new Integer[5];
+
+            for(int i=0;i<5;i++){
+                idx1[i]=i;
+            }
+            Arrays.sort(idx1,new Comparator<Integer>(){
+                public int compare(final Integer o1,final Integer o2){
+                    return Double.compare(classifiedAnswers[o1],classifiedAnswers[o2]);
+                }
+            });
+            String[] result= new String[1];
+            result[0] = classifiedAnsString[idx1[4]];
+            return result;
+        }
+        if(queryType == "where"){
+            Integer[] idx1= new Integer[5];
+
+            for(int i=0;i<5;i++){
+                idx1[i]=i;
+            }
+            Arrays.sort(idx1,new Comparator<Integer>(){
+                public int compare(final Integer o1,final Integer o2){
+                    return Double.compare(classifiedAnswers[o1],classifiedAnswers[o2]);
+                }
+            });
+            String[] result= new String[1];
+            result[0] = classifiedAnsString[idx1[4]];
+            return result;
+
         }
         return rankedDocs;
     }

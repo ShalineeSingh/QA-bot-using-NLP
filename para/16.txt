@@ -1,7 +1,1 @@
- <b>: Makes the text bold.  
- <big>: Makes the text usually one size bigger than what's around it.  
- <i>: Makes text italic. 
- <b>: Makes the text bold.  
- <big>: Makes the text usually one size bigger than what's around it.  
- <i>: Makes text italic. 
-} 
+At the end of his year-long contract, Gandhi prepared to return to India until he learned, at his farewell party, of a bill before the Natal Legislative Assembly that would deprive Indians of the right to vote. Fellow immigrants convinced Gandhi to stay and lead the fight against the legislation. Although Gandhi could not prevent the law’s passage, he drew international attention to the injustice.

@@ -1,9 +1,0 @@
-Line Breaks 
-The <br> tag is used when you want to start a new line, but don't want to start a new paragraph. The 
-<br> tag forces a line break wherever you place it. It is similar to single spacing in a document. 
- 
-Line Breaks 
-The <br> tag is used when you want to start a new line, but don't want to start a new paragraph. The 
-<br> tag forces a line break wherever you place it. It is similar to single spacing in a document. 
- 
-}, 

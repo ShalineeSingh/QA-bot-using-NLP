@@ -1,9 +1,1 @@
- HTML stands for Hyper Text Markup Language 
- An HTML file is a text file containing small markup tags 
- The markup tags tell the Web browser how to display the page 
- An HTML file must have an htm or html file extension 
- HTML stands for Hyper Text Markup Language 
- An HTML file is a text file containing small markup tags 
- The markup tags tell the Web browser how to display the page 
- An HTML file must have an htm or html file extension 
- 
+Mahatma Gandhi’s father, Karamchand Gandhi, served as a chief minister in Porbandar and other states in western India. His mother, Putlibai, was a deeply religious woman who fasted regularly.

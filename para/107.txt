@@ -1,8 +1,0 @@
-Cascading Style Sheets 
-Style sheets are used to provide 
-presentational suggestions for 
-documents marked up in HTML.  
-Cascading Style Sheets 
-Style sheets are used to provide 
-presentational suggestions for 
-documents marked up in HTML.  

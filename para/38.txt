@@ -1,7 +1,0 @@
-<h5 align="left">I can align headings </h5> 
- 
-<h5 align="left">I can align headings </h5> 
- 
-"data"​:​​ ​{ 
-"type"​:​​ ​​"carousel", 
-"templates"​:​​ ​[ 

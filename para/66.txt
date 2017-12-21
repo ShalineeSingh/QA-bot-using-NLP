@@ -1,9 +1,0 @@
-Although most browsers render blockquoted text by indenting it, that's not specifically what it's 
-designed to do. It's conceivable that some future browser may render blockquoted text in some other 
-way. However, for the time being, it is perfectly safe to indent blocks of text with the <blockquote>.  
- 
-Although most browsers render blockquoted text by indenting it, that's not specifically what it's 
-designed to do. It's conceivable that some future browser may render blockquoted text in some other 
-way. However, for the time being, it is perfectly safe to indent blocks of text with the <blockquote>.  
- 
-} 

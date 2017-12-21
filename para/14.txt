@@ -1,17 +1,1 @@
-What are HTML tags?  
- HTML tags are used to mark-up HTML elements 
- HTML tags are surrounded by the two characters < and > 
- The surrounding characters are called angle brackets 
- HTML tags normally come in pairs like <b> and </b> 
- The first tag in a pair is the start tag, the second tag is the end tag 
- The text between the start and end tags is the element content 
- HTML tags are not case sensitive, <b> means the same as <B> 
-What are HTML tags?  
- HTML tags are used to mark-up HTML elements 
- HTML tags are surrounded by the two characters < and > 
- The surrounding characters are called angle brackets 
- HTML tags normally come in pairs like <b> and </b> 
- The first tag in a pair is the start tag, the second tag is the end tag 
- The text between the start and end tags is the element content 
- HTML tags are not case sensitive, <b> means the same as <B> 
-"type":​ ​"text", 
+When Gandhi arrived in South Africa, he was quickly appalled by the discrimination and racial segregation faced by Indian immigrants at the hands of white British and Boer authorities. Upon his first appearance in a Durban courtroom, Gandhi was asked to remove his turban. He refused and left the court instead. The Natal Advertiser mocked him in print as “an unwelcome visitor.”

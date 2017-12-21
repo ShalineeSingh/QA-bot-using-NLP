@@ -1,6 +1,0 @@
-This HTML comment would be displayed like 
-this. 
-This HTML comment would be displayed like 
-this. 
-"subtitle"​:​​ ​​"subtitle​ ​for​ ​carousel", 
-"default_action"​:​​ ​{ 

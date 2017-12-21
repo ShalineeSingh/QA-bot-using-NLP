@@ -1,8 +1,1 @@
-Note: It doesn't matter which tag is first, but they must be closed in the proper order.  
-Note: It doesn't matter which tag is first, but they must be closed in the proper order.  
-○ type​*​​ ​:​ ​“carousel”​ ​,  
-○ templates​*​:​ ​contains​ ​array​ ​of​ ​carousal​ ​objects​ ​[​ ​Max:​ ​10​ ​]  
-○ title​*​​ ​:​ ​contains​ ​the​ ​title​ ​of​ ​the​ ​carousel​ ​, 
-○ subtitle​*​​ ​:​ ​contains​ ​the​ ​subtitle​ ​of​ ​the​ ​carousel​ ​,  
-○ image_url​ ​​:​ ​contains​ ​image​ ​to​ ​be​ ​shown​ ​in​ ​carousel​ ​, 
-○ default_action​​ ​:​ ​default​ ​action​ ​on​ ​click​ ​on​ ​particular​ ​carousel 
+In 1919, with India still under the firm control of the British, Gandhi had a political reawakening when the newly enacted Rowlatt Act authorized British authorities to imprison people suspected of sedition without trial. In response, Gandhi called for a Satyagraha campaign of peaceful protests and strikes. Violence broke out instead, which culminated on April 13, 1919, in the Massacre of Amritsar, when troops led by British Brigadier General Reginald Dyer fired machine guns into a crowd of unarmed demonstrators and killed nearly 400 people. No longer able to pledge allegiance to the British government, Gandhi returned the medals he earned for his military service in South Africa and opposed Britain’s mandatory military draft of Indians to serve in World War I.

@@ -1,5 +1,0 @@
-<h5>This is a heading</h5>  
-<h5>This is a heading</h5>  
--​ ​​ ​​web_url​​ ​:​ ​to​ ​open​ ​a​ ​link​ ​on​ ​web​ ​view 
--​ ​​ ​​postback​​ ​:​ ​to​ ​trigger​ ​a​ ​different​ ​flow 
--​ ​​ ​​phone_number​​ ​:​ ​to​ ​make​ ​a​ ​call 

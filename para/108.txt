@@ -1,6 +1,0 @@
- 
-Inside a definition-list definition (the <dd> tag) you can put paragraphs, line breaks, images, links, 
-other lists, etc 
- 
-Inside a definition-list definition (the <dd> tag) you can put paragraphs, line breaks, images, links, 
-other lists, etc 

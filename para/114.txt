@@ -1,4 +1,0 @@
-This Code  Would Display  
-<a href="http://www.austincc.edu/">Visit ACC!</a> Visit ACC!
-This Code  Would Display  
-<a href="http://www.austincc.edu/">Visit ACC!</a> Visit ACC!

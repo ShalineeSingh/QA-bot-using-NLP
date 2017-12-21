@@ -1,8 +1,0 @@
-Named anchors are often used to create "table of contents" at the beginning of a large document. Each 
-chapter within the document is given a named anchor, and links to each of these anchors are put at 
-the top of the document. If a browser cannot find a named anchor that has been specified, it goes to 
-the top of the document. No error occurs.  
-Named anchors are often used to create "table of contents" at the beginning of a large document. Each 
-chapter within the document is given a named anchor, and links to each of these anchors are put at 
-the top of the document. If a browser cannot find a named anchor that has been specified, it goes to 
-the top of the document. No error occurs.  

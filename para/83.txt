@@ -1,6 +1,0 @@
-HTML Backgrounds 
-HTML Backgrounds 
-"data"​:​​ ​{ 
-"type"​:​​ ​​"msg_options", 
-"text"​:​​ ​​"your​ ​message", 
-"options"​:​​ ​[ 

@@ -1,16 +1,1 @@
- Use a text editor to author an HTML document. 
- Be able to use basic tags to denote paragraphs, emphasis or special type. 
- Create hyperlinks to other documents. 
- Create an email link. 
- Add images to your document. 
- Use a table for layout. 
- Apply colors to your HTML document. 
- Use a text editor to author an HTML document. 
- Be able to use basic tags to denote paragraphs, emphasis or special type. 
- Create hyperlinks to other documents. 
- Create an email link. 
- Add images to your document. 
- Use a table for layout. 
- Apply colors to your HTML document. 
-JSON​ ​API 
-JSON​ ​API​ ​plugin​ ​will​ ​let​ ​you​ ​get​ ​interactive​ ​responses​ ​from​ ​your​ ​own​ ​custom​ ​backend.​ ​It​ ​expects​ ​the 
+In 1915 Gandhi founded an ashram in Ahmedabad, India, that was open to all castes. Wearing a simple loincloth and shawl, Gandhi lived an austere life devoted to prayer, fasting and meditation. He became known as “Mahatma,” which means “great soul.”

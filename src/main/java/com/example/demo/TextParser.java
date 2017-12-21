@@ -10,11 +10,17 @@ import java.io.IOException;
 
 @Service
 public class TextParser {
-    public String getFile(){
+    public String getFileName(){
      return this.filename;
     }
-    public void setFile(String filename){
+    public void setFileName(String filename){
         this.filename = filename;
+    }
+    public String getFilePath(){
+        return this.filepath;
+    }
+    public void setFilePath(String filepath){
+        this.filepath = filepath;
     }
 
     public void getFileText() throws IOException {
@@ -22,7 +28,8 @@ public class TextParser {
         String dirName = System.getProperty("user.dir");
         Utils.saveFileFromUrlWithJavaIO(
                 dirName +  "/docs/" + filename + ".txt",
-                filename);
+                filepath);
     }
     private String filename;
+    private String filepath;
 }

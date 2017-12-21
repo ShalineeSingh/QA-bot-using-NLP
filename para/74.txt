@@ -1,8 +1,0 @@
-This Code  Would Display  
-<p> This code            would appear 
-as this.</p> This code would appear as this. 
-This Code  Would Display  
-<p> This code            would appear 
-as this.</p> This code would appear as this. 
-○ text​*​​ ​:​ ​name​ ​of​ ​the​ ​option  
-○ postback​​ ​:​ ​flow​ ​to​ ​trigger​ ​on​ ​click​ ​of​ ​particular​ ​option  

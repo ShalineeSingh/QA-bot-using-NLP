@@ -1,5 +1,0 @@
-<p align="center">this is another paragraph</p> 
- 
-<p align="center">this is another paragraph</p> 
- 
-{ 

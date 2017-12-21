@@ -1,4 +1,0 @@
-src="chef.gif" means that the image is in the 
-same folder as the html document calling for it.  
-src="chef.gif" means that the image is in the 
-same folder as the html document calling for it.  

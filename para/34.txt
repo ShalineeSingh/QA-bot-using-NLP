@@ -1,5 +1,0 @@
-<h6> This is a heading</h6> 
-<h6> This is a heading</h6> 
-● payload​​ ​:​ ​payload​ ​data​ ​based​ ​on​ ​type​ ​of​ ​button 
-For​ ​web_url,​ ​payload​ ​need​ ​to​ ​be​ ​a​ ​valid​ ​url​ ​[with​ ​http​ ​or​ ​https] 
-For​ ​postback,​ ​payload​ ​will​ ​be​ ​of​ ​the​ ​form​ ​‘flow_{{flow_key}}’ 

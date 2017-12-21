@@ -65,7 +65,8 @@ public class PdfParserController {
 
     @RequestMapping(value = "getText", method = RequestMethod.GET, produces = "application/json")
     public ResponseEntity<?> getTxtFile(@RequestHeader("filePath") String filePath, @RequestHeader("fileName") String fileName,HttpServletResponse res) {
-        textParser.setFile(filePath);
+        textParser.setFilePath(filePath);
+        textParser.setFileName(fileName);
         JSONObject response;
         try {
             textParser.getFileText();
@@ -98,26 +99,26 @@ public class PdfParserController {
         }
         return new ResponseEntity(response, HttpStatus.OK);
     }
-//TODO: findIndexer if index already exists : findIndexer();
-    @RequestMapping(value = "getIndexedFileTopics", method = RequestMethod.GET, produces = "application/json")
-    public ResponseEntity<?> getTrainedFileDetails(@RequestHeader("fileName") String fileName,HttpServletResponse res) {
-        JSONObject response;
-        try{
-            indexerParaDocs.findIndexer();
-            response = new JSONObject();
-            JSONObject data = new JSONObject();
-            data.put("type", "text");
-            data.put("text", "Getting relevant topics...");
-            response.put("data", data);
-        }catch(Exception ex){
-            return new ResponseEntity<String>(HttpStatus.BAD_REQUEST);
-        }
-        return new ResponseEntity(response, HttpStatus.OK);
-    }
+////TODO: findIndexer if index already exists : findIndexer();
+//    @RequestMapping(value = "getIndexedFileTopics", method = RequestMethod.GET, produces = "application/json")
+//    public ResponseEntity<?> getTrainedFileDetails(@RequestHeader("fileName") String fileName,HttpServletResponse res) {
+//        JSONObject response;
+//        try{
+//            indexerParaDocs.findIndexer();
+//            response = new JSONObject();
+//            JSONObject data = new JSONObject();
+//            data.put("type", "text");
+//            data.put("text", "Getting relevant topics...");
+//            response.put("data", data);
+//        }catch(Exception ex){
+//            return new ResponseEntity<String>(HttpStatus.BAD_REQUEST);
+//        }
+//        return new ResponseEntity(response, HttpStatus.OK);
+//    }
 
     //TODO: RankQueryTokens: call after user enters the query
     @RequestMapping(value = "getRelevantParas", method = RequestMethod.GET, produces = "application/json")
-    public ResponseEntity<?> getRelevantParas(@RequestHeader("query") String query,HttpServletResponse res) {
+    public ResponseEntity<?> getRelevantParas(@RequestParam("question") String query,HttpServletResponse res) {
         JSONObject response;
         try{
             String[] rankedDocs = indexerParaDocs.RankQueryTokens(query);
@@ -133,5 +134,22 @@ public class PdfParserController {
     }
 
     //TODO : code if a document is selected, indexer should change + endpoint for this
+    @RequestMapping(value = "selectDocument", method = RequestMethod.GET, produces = "application/json")
+    public ResponseEntity<?> getDoc(@RequestParam("fileName") String fileName,HttpServletResponse res) {
+        JSONObject response;
+        try{
+//            String[] rankedDocs = indexerParaDocs.RankQueryTokens(query);
+            indexerParaDocs.findIndexer(fileName);
+            response = new JSONObject();
+            JSONObject data = new JSONObject();
+            data.put("type", "text");
+            data.put("text","getting relevant topics for this file .. ");
+            response.put("data", data);
+        }catch(Exception ex){
+            return new ResponseEntity<String>(HttpStatus.BAD_REQUEST);
+        }
+        return new ResponseEntity(response, HttpStatus.OK);
+    }
+
 }
 

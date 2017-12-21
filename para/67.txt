@@ -1,9 +1,0 @@
-This Code Would Display  
-<abbr title="World Wide Web">WWW</abbr>  WWW
- 
-When you hold your mouse pointer over the WWW, text in the title attribute will appear in.  
-This Code Would Display  
-<abbr title="World Wide Web">WWW</abbr>  WWW
- 
-When you hold your mouse pointer over the WWW, text in the title attribute will appear in.  
-} 

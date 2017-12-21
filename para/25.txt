@@ -1,10 +1,1 @@
-Note: Some tags we will discuss are deprecated, meaning the World Wide Web Consortium 
-(W3C) the governing body that sets HTML, XML, CSS, and other technical standards decided 
-those tags and attributes are marked for deletion in future versions of HTML and XHTML. 
-Browsers should continue to support deprecated tags and attributes, but eventually these tags 
-are likely to become obsolete and so future support cannot be guaranteed. 
-Note: Some tags we will discuss are deprecated, meaning the World Wide Web Consortium 
-(W3C) the governing body that sets HTML, XML, CSS, and other technical standards decided 
-those tags and attributes are marked for deletion in future versions of HTML and XHTML. 
-Browsers should continue to support deprecated tags and attributes, but eventually these tags 
-are likely to become obsolete and so future support cannot be guaranteed. 
+Wearing a homespun white shawl and sandals and carrying a walking stick, Gandhi set out from his religious retreat in Sabarmati on March 12, 1930, with a few dozen followers. By the time he arrived 24 days later in the coastal town of Dandi, the ranks of the marchers swelled, and Gandhi broke the law by making salt from evaporated seawater.
