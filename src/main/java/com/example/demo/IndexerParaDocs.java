@@ -52,6 +52,7 @@ public class IndexerParaDocs {
     }
 
     public File[] getFileList(String filename){
+        System.out.println(filename);
         String filePath = System.getProperty("user.dir") + "/para/"+filename;
         File dir = new File(filePath);
         File[] flist=dir.listFiles();
@@ -146,7 +147,7 @@ public class IndexerParaDocs {
         //call the rank function based on tfidf
 
         //TODO : set filename
-        String filename = getFileName();
+        String filename = Utils.filename;
         File[] flist = getFileList(filename);
         return rank(frequencyData,doclist,token,flist,queryType);
     }
@@ -370,7 +371,7 @@ public class IndexerParaDocs {
         for(int i=z-1;i>=z-5;i--){
 
             try{
-                BufferedReader reader = new BufferedReader(new FileReader("para/"+flist[idx[i]].getName()));
+                BufferedReader reader = new BufferedReader(new FileReader("para/"+Utils.filename+"/"+flist[idx[i]].getName()));
                 String paraFile="";
                 String line;
                 while ((line = reader.readLine()) != null)
@@ -467,14 +468,6 @@ public class IndexerParaDocs {
 //    public File[] getFileList(){
 //        return fileList;
 //    }
-
-    public String getFileName() {
-        return  this.filename;
-    }
-    public void setFileName(String filename) {
-        this.filename = filename;
-    }
-    private String filename;
 
 }
 class Index implements Runnable

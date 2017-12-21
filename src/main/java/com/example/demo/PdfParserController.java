@@ -19,6 +19,7 @@ import java.io.IOException;
 @RestController
 public class PdfParserController {
 
+    private static String fileName ;
     @Autowired
     private pdfParser PdfParser;
 
@@ -33,7 +34,7 @@ public class PdfParserController {
 
     @RequestMapping(value = "/")
     public String hello(){
-        return "hello sab chutiya hai ";
+        return "Welcome to QnA";
     }
 
 
@@ -41,7 +42,7 @@ public class PdfParserController {
     public ResponseEntity<?> getFile(@RequestHeader("filePath") String filePath,@RequestHeader("fileName") String fileName, HttpServletResponse res) throws TikaException, IOException, SAXException {
         PdfParser.setFilePath(filePath);
         PdfParser.setFileName(fileName);
-        indexerParaDocs.setFileName(fileName);
+        utils.setFileName(fileName);
         System.out.println(fileName);
 
         JSONObject response;
@@ -57,7 +58,7 @@ public class PdfParserController {
             response = new JSONObject();
             JSONObject data = new JSONObject();
             data.put("type", "text");
-            data.put("text", "Indexing the data...");
+            data.put("text", "The document is uploaded Successfully and above are the relevant topics of the selected document. Feel free to ask question related to the topics :slightly_smiling_face:");
             response.put("data", data);
         } catch(Exception ex) {
             return new ResponseEntity<String>(HttpStatus.BAD_REQUEST);
@@ -70,7 +71,7 @@ public class PdfParserController {
     public ResponseEntity<?> getTxtFile(@RequestHeader("filePath") String filePath, @RequestHeader("fileName") String fileName,HttpServletResponse res) {
         textParser.setFilePath(filePath);
         textParser.setFileName(fileName);
-        indexerParaDocs.setFileName(fileName);
+        utils.setFileName(fileName);
         JSONObject response;
         System.out.println(fileName);
         try {
@@ -80,7 +81,7 @@ public class PdfParserController {
             response = new JSONObject();
             JSONObject data = new JSONObject();
             data.put("type", "text");
-            data.put("text", "Indexing the data...");
+            data.put("text", "The document is uploaded Successfully and above are the relevant topics of the selected document. Feel free to ask question related to the topics :slightly_smiling_face:");
             response.put("data", data);
             System.out.println(response);
         } catch(Exception ex) {
@@ -126,7 +127,9 @@ public class PdfParserController {
     @RequestMapping(value = "getRelevantParas", method = RequestMethod.GET, produces = "application/json")
     public ResponseEntity<?> getRelevantParas(@RequestParam("question") String query,HttpServletResponse res) {
         JSONObject response;
+
         try{
+
             String[] rankedDocs = indexerParaDocs.RankQueryTokens(query);
             response = new JSONObject();
             JSONObject data = new JSONObject();
@@ -134,6 +137,7 @@ public class PdfParserController {
             data.put("text",rankedDocs);
             response.put("data", data);
         }catch(Exception ex){
+            ex.printStackTrace();
             return new ResponseEntity<String>(HttpStatus.BAD_REQUEST);
         }
         return new ResponseEntity(response, HttpStatus.OK);

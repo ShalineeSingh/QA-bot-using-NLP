@@ -50,4 +50,12 @@ public class Utils {
                 fout.close();
         }
     }
+
+    public String getFileName() {
+        return  this.filename;
+    }
+    public void setFileName(String filename) {
+        this.filename = filename;
+    }
+    public static String filename;
 }
