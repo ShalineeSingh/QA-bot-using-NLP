@@ -38,6 +38,7 @@ public class PdfParserController {
     }
 
 
+
     @RequestMapping(value = "convertToTxt", method = RequestMethod.GET, produces = "application/json")
     public ResponseEntity<?> getFile(@RequestHeader("filePath") String filePath,@RequestHeader("fileName") String fileName, HttpServletResponse res) throws TikaException, IOException, SAXException {
         PdfParser.setFilePath(filePath);
@@ -91,6 +92,33 @@ public class PdfParserController {
         return new ResponseEntity(response, HttpStatus.OK);
     }
 
+    @RequestMapping(value = "getLocale", method = RequestMethod.GET, produces = "application/json")
+    public ResponseEntity<?> getFile(@RequestParam("locale") String locale) {
+        JSONObject response;
+        if(locale.equals("en-US")){
+            response = new JSONObject();
+            JSONObject data = new JSONObject();
+            data.put("ENGATI.DASHBOARD","DASHBOARD");
+            data.put("ENGATI.CHANNELS","CHANNELS");
+            data.put("ENGATI.SETTINGS","SETTINGS");
+            data.put("ENGATI.SIGNIN","SIGNIN");
+            data.put("ENGATI.FORGOT_PASSWORD","FORGOT PASSWORD");
+            data.put("ENGATI.NEW_ACCOUNT","Want a new account");
+            response.put("displayKeyValueMap",data);
+        }else{
+            response = new JSONObject();
+            JSONObject data = new JSONObject();
+            data.put("ENGATI.DASHBOARD","Tablero");
+            data.put("ENGATI.CHANNELS","Canales");
+            data.put("ENGATI.SETTINGS","Configuraciones");
+            data.put("ENGATI.SIGNIN","Registrarse");
+            data.put("ENGATI.FORGOT_PASSWORD","Se te olvidó tu contras");
+            data.put("ENGATI.NEW_ACCOUNT","Desea nueva cuenta");
+            response.put("displayKeyValueMap",data);
+        }
+
+        return new ResponseEntity(response, HttpStatus.OK);
+    }
     @RequestMapping(value = "getTrainedDocs", method = RequestMethod.GET, produces = "application/json")
     public ResponseEntity<?> getTrainedDocuments(HttpServletResponse res) {
         JSONObject response;
