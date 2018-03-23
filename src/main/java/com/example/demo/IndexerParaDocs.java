@@ -74,8 +74,9 @@ public class IndexerParaDocs {
         stemObj=new Stemmer();
     }
 
-    public File[] getFileList(){
-        String filePath = System.getProperty("user.dir") + "/para";
+    public File[] getFileList(String filename){
+        System.out.println(filename);
+        String filePath = System.getProperty("user.dir") + "/para/"+filename;
         File dir = new File(filePath);
         File[] flist=dir.listFiles();
         fileList=new File[flist.length];
@@ -85,8 +86,9 @@ public class IndexerParaDocs {
     //TODO contruct index from the file provided by the user
     //If the file is not indexed
     public void constructIndex(String filename) throws IOException {
-        createParaDocs("docs/" + filename + ".txt");
-        File[] flist = getFileList();
+        createParaDocs("docs/" + filename + ".txt", filename);
+        File[] flist = getFileList(filename);
+        System.out.println(filename);
         createIndexFile(frequencyData, doclist,flist, filename);
     }
 
@@ -166,7 +168,10 @@ public class IndexerParaDocs {
         sampleToken=new String[token.length];
         sampleToken=token;
         //call the rank function based on tfidf
-        File[] flist = getFileList();
+
+        //TODO : set filename
+        String filename = Utils.filename;
+        File[] flist = getFileList(filename);
         return rank(frequencyData,doclist,token,flist,queryType);
     }
 
@@ -184,11 +189,12 @@ public class IndexerParaDocs {
 //    }
 
 
-    public void createParaDocs(String filename) throws IOException{
+    public void createParaDocs(String filePath, String filename) throws IOException{
+        System.out.println(filename + " in create docs");
         BufferedWriter bw = null;
         try
         {
-            FileInputStream fileStream = new FileInputStream(filename);
+            FileInputStream fileStream = new FileInputStream(filePath);
             InputStreamReader input = new InputStreamReader(fileStream);
             BufferedReader reader = new BufferedReader(input);
             int count = 1;
@@ -201,7 +207,27 @@ public class IndexerParaDocs {
                 }else{
                     try {
                         // APPEND MODE SET HERE
-                        String paraname = "para/"+String.valueOf(count)+".txt";
+                        //create a folder with "filename"
+                        File theDir = new File("para/" + filename);
+                        System.out.println(theDir.getParentFile().getAbsolutePath());
+                        if (!theDir.exists()) {
+                            System.out.println("creating directory: " + theDir.getName());
+                            boolean result = false;
+                            File parent = theDir.getParentFile();
+
+                            try{
+//                                parent.mkdirs();
+                                theDir.mkdirs();
+                                result = true;
+                            }
+                            catch(SecurityException se){
+                                //handle it
+                            }
+                            if(result) {
+                                System.out.println("DIR created");
+                            }
+                        }
+                        String paraname = "para/"+filename+"/"+String.valueOf(count)+".txt";
                         bw = new BufferedWriter(new FileWriter(paraname, true));
                         bw.write(line);
                         bw.newLine();
@@ -368,7 +394,7 @@ public class IndexerParaDocs {
         for(int i=z-1;i>=z-5;i--){
 
             try{
-                BufferedReader reader = new BufferedReader(new FileReader("para/"+flist[idx[i]].getName()));
+                BufferedReader reader = new BufferedReader(new FileReader("para/"+Utils.filename+"/"+flist[idx[i]].getName()));
                 String paraFile="";
                 String line;
                 while ((line = reader.readLine()) != null)
@@ -376,27 +402,29 @@ public class IndexerParaDocs {
                     paraFile= paraFile+line;
                 }
                 reader.close();
-                //System.out.println(paraFile);
+//                System.out.println(queryType);
+//                System.out.println(queryType.equals("where"));
 
-                if(queryType == "who"){
-                    Map<String, String> entityTags = getEntityTags(paraFile);
-                    for(String word : entityTags.keySet( )){
-                        if(entityTags.get(word) == "PERSON"){
-                            classifiedAnswers[fileSize-i-1]++;
-                            classifiedAnsString[fileSize-i-1]=word;
-                        }
-                    }
-                }
-                if(queryType == "where"){
 
-                    Map<String, String> entityTags = getEntityTags(paraFile);
-                    for(String word : entityTags.keySet( )){
-                        if(entityTags.get(word) == "PLACE"){
-                            classifiedAnswers[fileSize-i-1]++;
-                            classifiedAnsString[fileSize-i-1]=word;
-                        }
-                    }
-                }
+//                if(queryType.equals("who")){
+//                    Map<String, String> entityTags = getEntityTags(paraFile);
+//                    for(String word : entityTags.keySet( )){
+//                        if(entityTags.get(word).equals("PERSON")){
+//                            classifiedAnswers[fileSize-i-1]++;
+//                            classifiedAnsString[fileSize-i-1]=word;
+//                        }
+//                    }
+//                }
+//                if(queryType.equals("where")){
+//                    System.out.print("inside where");
+//                    Map<String, String> entityTags = getEntityTags(paraFile);
+//                    for(String word : entityTags.keySet( )){
+//                        if(entityTags.get(word).equals("LOCATION")){
+//                            classifiedAnswers[fileSize-i-1]++;
+//                            classifiedAnsString[fileSize-i-1]=word;
+//                        }
+//                    }
+//                }
 
                 rankedDocs[fileSize-i-1]=paraFile;
 
@@ -408,37 +436,41 @@ public class IndexerParaDocs {
                 return null;
             }
         }
-        if(queryType == "who"){
-            Integer[] idx1= new Integer[5];
-
-            for(int i=0;i<5;i++){
-                idx1[i]=i;
-            }
-            Arrays.sort(idx1,new Comparator<Integer>(){
-                public int compare(final Integer o1,final Integer o2){
-                    return Double.compare(classifiedAnswers[o1],classifiedAnswers[o2]);
-                }
-            });
-            String[] result= new String[1];
-            result[0] = classifiedAnsString[idx1[4]];
-            return result;
-        }
-        if(queryType == "where"){
-            Integer[] idx1= new Integer[5];
-
-            for(int i=0;i<5;i++){
-                idx1[i]=i;
-            }
-            Arrays.sort(idx1,new Comparator<Integer>(){
-                public int compare(final Integer o1,final Integer o2){
-                    return Double.compare(classifiedAnswers[o1],classifiedAnswers[o2]);
-                }
-            });
-            String[] result= new String[1];
-            result[0] = classifiedAnsString[idx1[4]];
-            return result;
-
-        }
+//        if(queryType.equals("who")){
+//            Integer[] idx1= new Integer[5];
+//
+//            for(int i=0;i<5;i++){
+//                idx1[i]=i;
+//            }
+//            Arrays.sort(idx1,new Comparator<Integer>(){
+//                public int compare(final Integer o1,final Integer o2){
+//                    return Double.compare(classifiedAnswers[o1],classifiedAnswers[o2]);
+//                }
+//            });
+//            String[] result= new String[1];
+//            result[0] = classifiedAnsString[idx1[4]];
+//            return result;
+//        }
+//        if(queryType.equals("where")){
+//                            System.out.println("inside where");
+//
+//            Integer[] idx1= new Integer[5];
+//
+//            for(int i=0;i<5;i++){
+//                idx1[i]=i;
+//            }
+//            Arrays.sort(idx1,new Comparator<Integer>(){
+//                public int compare(final Integer o1,final Integer o2){
+//                    return Double.compare(classifiedAnswers[o1],classifiedAnswers[o2]);
+//                }
+//            });
+//            String[] result= new String[1];
+//            result[0] = classifiedAnsString[idx1[4]];
+//            System.out.println(result[0]);
+//
+//            return result;
+//
+//        }
         return rankedDocs;
     }
 //
@@ -503,6 +535,7 @@ class Index implements Runnable
                 {
                     //read word from the file
                     word = textFile.next();
+                    word = word.toLowerCase();
                     if(stopWords.containsKey(word)){
                     }
                     else{
@@ -546,17 +579,22 @@ class Index implements Runnable
     }
 
     public static Map<String, String> getEntityTags(String text) throws IOException, ClassNotFoundException {
-        String model = "english.all.3class.distsim.crf.ser.gz";
+        String model = "english.muc.7class.distsim.crf.ser.gz";
         AbstractSequenceClassifier<CoreLabel> classifier = CRFClassifier.getClassifier(model);
         List<List<CoreLabel>> out = classifier.classify(text);
         Map<String, String> entityTagMap = new HashMap<>();
         for (List<CoreLabel> sentence : out) {
             for (CoreLabel word : sentence) {
                 entityTagMap.put(word.word(),word.get(CoreAnnotations.AnswerAnnotation.class));
-//       System.out.println(word.word() + " - " + word.get(CoreAnnotations.AnswerAnnotation.class) );
+       System.out.println(word.word() + " - " + word.get(CoreAnnotations.AnswerAnnotation.class) );
             }
             System.out.println();
         }
         return entityTagMap;
     }
+
+    public static void main(String[] args) throws IOException, ClassNotFoundException {
+        getEntityTags("shalinee is good girl. lucknow doing 8th january 2017 intel ");
+    }
+
 }
